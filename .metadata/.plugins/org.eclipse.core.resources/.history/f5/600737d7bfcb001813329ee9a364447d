@@ -1,0 +1,8 @@
+package com.capgemini.product.entity;
+
+import org.springframework.data.annotation.Id;
+
+public class Product {
+
+	@Id
+}

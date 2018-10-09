@@ -1,0 +1,21 @@
+package com.capgemini.customer.sevice;
+
+import java.util.List;
+
+import com.capgemini.customer.entity.Customer;
+
+public interface customerService {
+
+public Customer authenticate(Customer customer);
+	
+	public Customer addCustomer(Customer customer);
+	
+	public Customer updateCustomer(Customer customer) ;
+	
+	public Customer findCustomerById(int customerId);
+	
+	public void deleteCustomer(Customer customer);
+
+	public List<Customer> getAllCustomers();
+	
+}

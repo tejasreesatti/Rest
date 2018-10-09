@@ -1,0 +1,67 @@
+package com.capgemini.order.entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.data.annotation.Id;
+
+@Entity
+@Table(name = "ordertable")
+public class Order {
+	@Id
+	private int orderId;
+	private int orderTotal;
+	private LocalDate orderDate;
+	private int customerId;
+	
+	public Order() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Order(int orderId, int orderTotal, LocalDate orderDate, int customerId) {
+		super();
+		this.orderId = orderId;
+		this.orderTotal = orderTotal;
+		this.orderDate = orderDate;
+		this.customerId = customerId;
+	}
+
+	public int getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+
+	public int getOrderTotal() {
+		return orderTotal;
+	}
+
+	public void setOrderTotal(int orderTotal) {
+		this.orderTotal = orderTotal;
+	}
+
+	public LocalDate getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(LocalDate orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+	
+	
+	
+	
+}
